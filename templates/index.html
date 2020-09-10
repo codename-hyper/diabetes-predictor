@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Diabetes Test{% endblock %}
+
+{% block content %}
+
+<h2><div class="mx-auto" style="width: 340px;"><span class="badge badge-dark">ENTER YOUR DETAILS BELOW:</span></div></h2>
+
+
+<form action="/predict" method="post">
+    <div class="form-group">
+    <p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Pregnancies:
+        <input type="text" class="form-control" name="Pregnancies" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Glucose:
+        <input type="text" class="form-control" name="Glucose" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Blood Pressure:
+        <input type="text" class="form-control" name="BloodPressure" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Skin Thickness:
+        <input type="text" class="form-control" name="SkinThickness" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Insulin:
+        <input type="text" class="form-control" name="Insulin"required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  BMI:
+        <input type="text" class="form-control" name="BMI" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Diabetes Pedigree Function:
+        <input type="text" class="form-control" name="DPF" required></div></p></div>
+
+    <div class="form-group"><p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+  Age:
+        <input type="text" class="form-control" name="Age" required></div></p></div>
+
+    <p class="text-secondary"><div class="mx-auto" style="width: 200px;">
+    <button type="submit" class="btn btn-primary">Submit</button></div></p>
+</form>
+{% endblock %}
